@@ -1,0 +1,25 @@
+server:
+  port: 10010
+
+spring:
+  application:
+    gateway-test
+
+  eureka:
+    client:
+      service-url: # eureka?????
+        defaultZone: http://127.0.0.1:8761/eureka
+
+  cloud:
+    gateway:
+      enabled: true
+      routes:
+        - id: order-service
+          uri: lb://orderservice
+          predicates:
+            - Path=/order/**
+
+        - id: user-service
+          uri: lb://userservice
+          predicates:
+            - Path=/user/**
