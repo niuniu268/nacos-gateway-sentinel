@@ -9,15 +9,24 @@ spring:
   application:
     name: orderservice
 
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
     map-underscore-to-camel-case: true
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8761/eureka
+
+userservice:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
+
 
 
 

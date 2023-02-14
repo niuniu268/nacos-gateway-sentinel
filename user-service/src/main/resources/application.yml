@@ -7,10 +7,17 @@ spring:
     password: louis
     driver-class-name: com.mysql.jdbc.Driver
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
+  application:
+    name: userservice
+
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8761/eureka
 
 
 
