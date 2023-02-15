@@ -34,7 +34,8 @@ services:
 
 ### Result:
 
-!<image2>(https://raw.githubusercontent.com/niuniu268/nacos-gateway-sentinel/master/images/Screenshot2.png)
+!<image2>[https://raw.githubusercontent.com/niuniu268/nacos-gateway-sentinel/master/images/Screenshot2.png]
+
 !<img src="https://raw.githubusercontent.com/niuniu268/nacos-gateway-sentinel/master/images/Screenshot3.png">
 
 
